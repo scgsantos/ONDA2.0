@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ONDA | Login/Registo</title>
+    <link rel="icon" href="../assets/ONDAicon.svg">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=nippo@200,300,500,700,400&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=boxing@400&display=swap" rel="stylesheet">
+</head>
+<body class="ouvinte">
+
+<main class="container" id="auth">
+    <div class="logo"><img src="../assets/logoONDA_fundoclaro.svg" width="250" height="" alt="logo_fundoescuro"></div>
+    <div class="form" id="loginBox">
+        <h2>Login</h2>
+        <form action="" method="post" id="login" autocomplete="off">
+            <input placeholder="username" type="text" id="l_user"><br>
+            <input placeholder="password" type="password" id="l_pwd"><br>
+            <button type="submit" class="ouvintesbtn">ENTRAR</button>
+        </form>
+    </div>
+    <div class="form" id="registoBox">
+        <h2>Registo</h2>
+        <form action="" method="post" id="registo" autocomplete="off">
+            <input placeholder="username" type="text" id="r_user"><br>
+            <input placeholder="nome e sobrenome" type="text" id="name"><br>
+            <input placeholder="password" type="password" id="r_pwd"><br>
+            <input placeholder="confirmar password" type="password" id="pwd_repeat"><br>
+            <button type="submit" class="ouvintesbtn">REGISTAR</button>
+        </form>
+    </div>
+
+</main>
+
+<script type="module" src="../js/login.js"></script>
+<script type="module" src="../js/registo.js"></script>
+
+</body>
+</html>

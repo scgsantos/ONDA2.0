@@ -1,0 +1,493 @@
+
+/* layout colors */
+$green: #3A8960
+$beige: #E1D5CA
+$black: #2D2E2F
+
+*
+    font-size: 18px
+    font-family: "Nippo", sans-serif
+    font-weight: 400
+
+html, body
+    margin: 0
+
+a
+    text-decoration: none
+    width: border-box
+
+.container
+    width: 100vw
+    height: 100vh
+    display: flex
+
+section
+    flex-grow: 3
+    padding: 2rem 2.5rem
+    text-align: center
+
+strong
+    font-family: "Boxing", sans-serif
+
+h1
+    font-size: 2rem
+    font-weight: 500
+    text-align: center
+    margin: 0 auto 1.5rem
+    display: inline-block
+    padding: 0.5rem 1rem
+
+.ouvinte h1
+    border: 2px solid $black
+
+.artista h1
+    border: 2px solid $beige
+
+h2
+    font-size: 1.4rem
+    font-weight: 500
+    text-align: center
+    margin: 0 0 1.5rem
+
+h3
+    font-size: 1.1rem
+    font-weight: 500
+    text-align: center
+
+b
+    font-weight: 500
+
+button
+    background: transparent
+    border: 2px solid
+    cursor: pointer
+    padding: 0.4rem 0.7rem
+    display: block
+    margin: 1.5rem auto 0
+    text-align: center
+    font-weight: 400
+
+fieldset
+    border: none
+
+.error
+    color: red
+    font-size: 0.8rem
+    font-weight: 300
+    text-align: center
+
+#landing
+    position: fixed
+
+#landing div
+    text-align: center
+    width: 50%
+    box-sizing: border-box
+
+#landing div img, #landing div a
+    display: block
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+
+#landing img
+    margin-top: 30%
+
+#landing a
+    margin-top: 2rem
+
+.ouvinte
+    background-color: $beige
+    color: $black
+
+.artista
+    background-color: $black
+    color: $beige
+
+.ouvintesbtn
+    border-color: $black
+    color: $black
+
+.ouvintesbtn:hover
+    color: $beige
+    background-color: $black
+
+.artistasbtn
+    border-color: $beige
+    color: $beige
+
+.artistasbtn:hover
+    color: $black
+    background-color: $beige
+
+.artista input
+    color: $beige
+    border: 2px solid $beige
+    background: transparent
+    padding: 0.4rem 0.7rem
+    text-align: center
+    margin-bottom: -2px
+
+.artista input::placeholder
+    color: $beige
+    font-weight: 300
+
+.ouvinte input
+    color: $black
+    border: 2px solid $black
+    background: transparent
+    padding: 0.4rem 0.7rem
+    text-align: center
+    margin-bottom: -2px
+
+.ouvinte a
+    color: $black
+
+.artista a
+    color: $beige
+
+.ouvinte input::placeholder
+    color: $black
+    font-weight: 300
+
+#auth
+    justify-content: center
+    align-items: baseline
+    flex-wrap: wrap
+    height: 90%
+    margin-top: 5%
+
+#auth .form
+    margin: 3rem 2rem 0
+
+#auth .logo
+    flex-basis: 100%
+    text-align: center
+
+.container:not(#auth), .container:not(#landing)
+    align-items: stretch
+
+#home h1
+    font-size: 3rem
+    font-weight: 400
+    border: none
+    padding: 15rem 0
+    text-align: center
+
+.sidenav
+    width: 15%
+    text-align: center
+
+.sidenav h3
+    margin-bottom: 3rem
+
+.sidenav button
+    font-weight: 500
+    margin: 1rem auto
+    width: 100%
+
+#bibliodrop:hover #biblionav
+    display: block
+
+#bibliodrop:hover #bibliobtn
+    margin: 0 auto -2px
+
+#pessoalbtn
+    margin: 0 auto -2px
+
+#pessoalnav:hover
+    margin: 0
+
+#pessoaldrop:hover #pessoalnav
+    display: block
+    margin: 0
+
+.dropdown
+    margin-top: 1rem
+
+.dropdown-content a
+    background: transparent
+    padding: 0.4rem 0.3rem
+    text-align: center
+    display: block
+    font-size: 0.9rem
+    width: 80%
+    margin: 0 auto -2px
+    float: none
+
+.ouvinte .dropdown-content a
+    color: $black
+    border: 2px solid $black
+
+.artista .dropdown-content a
+    color: $beige
+    border: 2px solid $beige
+
+.dropdown-content .ouvintelink:hover
+    background-color: $black
+    color: $beige
+
+.dropdown-content .artistalink:hover
+    background-color: $beige
+    color: $black
+
+.dropdown-content
+    display: none
+
+.dropdown:not(:hover) .dropdown-content
+    display: none
+    height: 0
+    z-index: 1
+
+.dropdown:not(:hover) button
+    margin-bottom: -2px
+
+.dropdown .ouvintesbtn:hover
+    background-color: transparent
+    color: $black
+    cursor: default
+
+.dropdown .artistasbtn:hover
+    background-color: transparent
+    color: $beige
+    cursor: default
+
+.ouvinte .sidenav
+    padding: 1.5rem
+    border-right: 2px solid $black
+
+.artista .sidenav
+    padding: 1.5rem
+    border-right: 2px solid $beige
+
+.biblioteca h2
+    text-align: left
+
+.biblioteca h3
+    margin: 0
+    text-align: left
+
+#all .controls
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 1rem
+
+#all input[name="search"]
+    width: 15rem
+    text-align: left
+
+.ouvinte input[type="radio"]
+    -webkit-appearance: none
+    appearance: none
+    color: $black
+    padding: 0.3rem
+    margin-right: 0.3rem
+
+.artista input[type="radio"], .artista input[type="checkbox"]
+    -webkit-appearance: none
+    appearance: none
+    color: $beige
+    padding: 0.3rem
+    margin-right: 0.3rem
+
+.ouvinte input[type="radio"]:checked
+    background: $black
+
+.artista input[type="radio"]:checked, .artista input[type="checkbox"]:checked
+    background: $beige
+
+.artista select
+    -webkit-appearance: none
+    appearance: none
+    color: $beige
+    border: 2px solid $beige
+    background: url("../assets/downarrow_fundoescuro.svg") no-repeat right transparent
+    background-position-x: 92%
+    padding: 0.4rem 1.7rem 0.4rem 0.7rem
+    margin-left: 1rem
+    text-align: left
+
+.ouvinte select
+    -webkit-appearance: none
+    appearance: none
+    color: $black
+    border: 2px solid $black
+    background: url("../assets/downarrow_fundoclaro.svg") no-repeat right transparent
+    background-position-x: 92%
+    padding: 0.4rem 1.7rem 0.4rem 0.7rem
+    margin-left: 1rem
+    text-align: left
+
+select:focus
+    outline: none
+
+.ouvinte input:focus
+    outline: 1px solid $black
+
+.artista input:focus
+    outline: 1px solid $beige
+
+#all .sortlist
+    display: flex
+    align-items: center
+    column-gap: 0.5rem
+
+#all .sortlist label
+    font-weight: 300
+    padding: 0 0.1rem
+
+#all fieldset
+    padding: 0
+    margin: 0.1rem 0
+
+#all .controls button
+    display: inline-block
+    margin: 0
+
+.biblioteca table
+    text-align: left
+    margin: 0 auto
+    display: table
+    box-sizing: border-box
+    border-collapse: collapse
+    padding: 1rem
+    width: 100%
+    table-layout: auto
+    white-space: nowrap
+
+.ouvinte table
+    border: 2px solid $black
+
+.artista table
+    border: 2px solid $beige
+
+.biblioteca th
+    padding: 0.2rem 0.7rem
+    overflow: hidden
+    text-overflow: ellipsis
+
+.biblioteca tbody
+    margin: 2rem 0
+
+.ouvinte th
+    border: 2px solid $black
+
+.artista th
+    border: 2px solid $beige
+
+.biblioteca td
+    padding: 0.4rem 0.7rem
+    overflow: hidden
+    text-overflow: ellipsis
+
+#new
+    text-align: left
+    margin: 0 0 1rem
+    font-weight: 500
+
+#playlists
+    text-align: center
+
+.ouvinte .popup-content
+    background-color: $beige
+    color: $black
+    border: 2px solid $black
+    text-align: left
+    padding: 1.5rem 2rem
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    position: fixed
+    z-index: 3
+
+.popup-content button
+    display: block
+    margin: 0
+    float: right
+
+.popup-content button[name="searchlist"]
+    display: inline-block
+    margin: 0
+    float: none
+
+.popup-content .search
+    display: inline-block
+    margin: 0
+
+.popup-content #search
+    margin: 0
+
+.popup-content .close
+    margin-right: -1rem
+    float: right
+    line-height: 0.5rem
+
+.popup-content label
+    display: block
+    margin-bottom: 1rem
+
+.artista .popup-content .error
+    text-align: left
+    float: right
+    margin: 0.6rem 1rem 0 0
+
+.ouvinte .popup-content .error
+    text-align: left
+    margin: 1.5rem 1rem 0 0
+    float: right
+
+.popup-content input[type="text"]
+    margin-left: 1rem
+    text-align: left
+    width: 20rem
+
+.popup-content input[type="number"]
+    margin-left: 1rem
+    text-align: left
+    width: 3rem
+
+.artista .popup-content
+    background-color: $black
+    color: $beige
+    border: 2px solid $beige
+    text-align: left
+    padding: 1.5rem 2rem
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    position: fixed
+    z-index: 3
+
+.popup-content table
+    margin-top: 1rem
+
+.popup-content table td
+    font-size: 0.9rem
+    padding: 0.2rem 0.7rem
+    overflow: hidden
+    text-overflow: ellipsis
+
+.popup-content button[name="newplaylist"]
+    margin-top: 1rem
+
+.popup-content .mode
+    display: inline-block
+    margin-top: 0.5rem
+
+.popup-content button[name="playlistmode"]
+    margin-left: 1rem
+
+#confirmation
+    text-align: center
+
+#confirmation button
+    display: inline-block
+    margin: 1rem 0.1rem 0
+    float: none
+
+.biblioteca #remove
+    margin: 0
+    padding: 0 0.2rem
+    font-size: 0.8rem
+    display: inline-block
