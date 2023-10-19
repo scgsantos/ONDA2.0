@@ -1,0 +1,14 @@
+{
+    "clients": [
+    {
+        "username": "sofia",
+        "password": "sofia",
+        "name": "Sofia Santos"
+    },
+    {
+        "username": "mariana",
+        "password": "mariana",
+        "name": "Mariana Silva"
+    }
+  ]
+}

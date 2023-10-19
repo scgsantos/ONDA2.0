@@ -1,4 +1,4 @@
-import clients from "../json/clients.json" assert { type: "json" };
+import users from "../json/users.json" assert { type: "json" };
 
 const loginBox = document.getElementById("loginBox");
 const loginForm = document.getElementById("login");
@@ -15,7 +15,7 @@ loginForm.addEventListener("submit", (event) => {
   if (username === "" || password === "") {
     error.innerText = "Preencha todos os campos";
   } else {
-    clients.forEach(function (obj) {
+    users.clients.forEach(function (obj) {
       if (obj.username == username && obj.password == password) {
         session = username;
         window.location = "./index.html";

@@ -1,4 +1,4 @@
-import clients from "../json/clients.json" assert { type: "json" };
+import users from "../json/users.json" assert { type: "json" };
 
 const registoBox = document.getElementById("registoBox");
 const registoForm = document.getElementById("registo");
@@ -24,7 +24,7 @@ registoForm.addEventListener("submit", (event) => {
   ) {
     error.innerText = "Preencha todos os campos";
   } else {
-    clients.forEach(function (obj) {
+    users.clients.forEach(function (obj) {
       if (obj.username === username) existingUser = obj.username;
     });
     if (existingUser == username) error.innerText = "Username indisponível";
@@ -32,7 +32,14 @@ registoForm.addEventListener("submit", (event) => {
       error.innerText = "Passwords não correspondem";
     else {
       session = username;
-      window.location = "./index.html";
+      const newUser = {
+        username: username,
+        password: password,
+        name: name,
+      };
+      users.clients.push(newUser);
+      //window.location = "./index.html";
+      console.log(users);
     }
   }
   registoBox.appendChild(error);
